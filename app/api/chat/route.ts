@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server"
 
 const mockResponses = [
-  "That's a great question! Let me think about that.",
-  "Interesting point! Here's what I know about that.",
-  "I understand what you mean. Here's my take on it.",
-  "Thanks for sharing that! Here's something useful.",
-  "Good thinking! I'd approach it this way.",
+  "Here are **three tips** for you:\n- Stay consistent\n- Ask questions\n- Practice daily",
+  "Great question! The answer involves:\n1. **Planning** your approach\n2. **Executing** step by step\n3. **Reviewing** your work",
+  "Here's a quick code example:\n`console.log('Hello World')`\n\nThis prints to the console!",
+  "**Summary:** This is a _mock_ AI assistant built with Next.js and TypeScript.",
+  "I'd approach this in **two phases**:\n\n**Phase 1:** Research\n**Phase 2:** Implementation",
 ]
 
 export async function POST(req: NextRequest) {

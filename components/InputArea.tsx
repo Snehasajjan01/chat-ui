@@ -1,6 +1,6 @@
-"use client"  // ← Line 1: tells Next.js this runs in the browser
+"use client"
 
-import { useState } from "react"  // ← Line 2: imports useState
+import { useState } from "react"
 
 type Props = {
   onSend: (message: string) => void
@@ -21,7 +21,7 @@ export default function InputArea({ onSend, isLoading }: Props) {
   }
 
   return (
-    <div className="flex items-center gap-2 p-4 border-t border-gray-200 bg-white">
+    <div className="flex items-center gap-2 p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
       <input
         type="text"
         value={input}
@@ -29,7 +29,7 @@ export default function InputArea({ onSend, isLoading }: Props) {
         onKeyDown={handleKeyDown}
         placeholder="Type a message..."
         disabled={isLoading}
-        className="flex-1 px-4 py-2 rounded-full border border-gray-300 text-sm outline-none focus:border-blue-400 disabled:opacity-50"
+        className="flex-1 px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-white text-sm outline-none focus:border-blue-400 dark:focus:border-blue-400 disabled:opacity-50"
       />
       <button
         onClick={handleSend}
